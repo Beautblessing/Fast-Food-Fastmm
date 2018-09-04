@@ -16,12 +16,12 @@
 				<img src="img/logo_fff.png">
 			</div>
 
-			<nav>
-				<ul>
-					<li><a href="orders.html">Orders</a></li>
-					<li><a href="services.html"><img src="img/plus.png"></a></li>
+			<div id="navprofile">
+				<ul id="profile">
+					<li id="ordernav"><a href="orders.html">Orders</a></li>
+					<li><a href=""><img src="img/profilepix.png"></a></li>
 				</ul>
-			</nav>
+			</div>
 
 
 		</div>
@@ -774,61 +774,63 @@
 									<section id="checkout">
 										<div class="container">
 											<div class="checkout_order">
-												<h3>Complete Your Order</h3>
+												<form method="post" action="delivery_detail.html">
+													<h3 id="title-order">Complete Your Order</h3>
 
-												<div class="grid">
-													<div class="row">
-														<div class="col-8">
-															<p>Item</p>
+													<div class="grid">
+														<div class="row">
+															<div class="col-8">
+																<p>Item</p>
 
 
+															</div>
+
+															<div class="col-2">
+																<p>Quantity</p>
+
+															</div>
+
+															<div class="col-2">
+																<p>Price</p>
+															</div>
 														</div>
 
-														<div class="col-2">
-															<p>Quantity</p>
 
+
+
+														<div class="row">
+															<div class="col-8">
+																<p>Fruit Salad</p>
+
+
+															</div>
+
+															<div class="col-2">
+																<p>3</p>
+
+															</div>
+
+															<div class="col-2">
+																<p>5000</p>
+															</div>
 														</div>
 
-														<div class="col-2">
-															<p>Price</p>
-														</div>
-													</div>
 
 
+														
 
 
-													<div class="row">
-														<div class="col-8">
-															<p>Fruit Salad</p>
-
-
-														</div>
-
-														<div class="col-2">
-															<p>3</p>
+														<div class="charges">
+															
+															<h4>Subtotal: 5000</h4>
+															<h4>Delivery Charge: 500</h4>
+															<h3>Total: 5000</h3>		
+															<button class="button_1" type="submit">Checkout</button>
 
 														</div>
-
-														<div class="col-2">
-															<p>5000</p>
-														</div>
-													</div>
-
-
+													</form>	
 
 												</div>
-
-
-												<div class="charges">
-													
-													<h4>Subtotal: 5000</h4>
-													<h4>Delivery Charge: 500</h4>
-													<h3>Total: 5000</h3>		
-													<button class="button_1" type="submit">Checkout</button>
-
-												</div>
-
-
 												
 												
 
