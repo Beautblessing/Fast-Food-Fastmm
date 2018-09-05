@@ -25,8 +25,8 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-container">
-				<a href="#">View All</a>
-				<a href="#">Add</a>
+				<a href="menulist.html">View All</a>
+				<a href="menu_category.html">Add</a>
 				<!-- <a href="#">Edit</a>
 				<a href="#">Delete</a> -->
 			</div>
@@ -35,7 +35,7 @@
 				<i class="fa fa-caret-down"></i>
 			</button>
 			<div class="dropdown-container">
-				<a href="#">All Orders</a>
+				<a href="all_orders.html">All Orders</a>
 				<a href="#">Yet to be Delivered</a>
 				<a href="#">Cancelled Orders</a>
 				<a href="#">Completed Orders</a>
@@ -44,6 +44,7 @@
 		<div id="main" class="main-bg">
 			<h2>Food Menu</h2>
 			<div class="menu-category">
+				<form method="post" action="menu_category.html">
 				<span><label>Select Category</label>
 					<select> 
 						<option value="burgersandwichsharwama">Burgers, Sandwiches and Sharwama</option>
@@ -54,7 +55,7 @@
 						<option value="side">Side Orders</option>
 						<option value="starter">Starter</option>
 					</select><button class="button_3">Add New</button> </span>
-
+				</form>
 				</div>
 
 				<section id="menulist">

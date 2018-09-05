@@ -700,24 +700,37 @@ section#delivery-form .quote input{
 #sidebar-left{
 	float:left;
 	height: 100%;
-	width:25%;
+	width:20%;
 	z-index: 1;
     top: 0;
     left: 0;
 	background-color: #35424a;
-	
 	overflow-x: hidden;
 	position: relative;
 
    }
 
+   
 #sidebar-left, #main, #sidebar-right{
 	min-height: 600px	
 
 }
 
+.men-cat h2{
+	border-bottom: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	color:#f1f1f1; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
 
-
+/*.main-menu-category ul li{
+background-color: white;
+}*/
 /* Style the sidenav links and the dropdown button */
 #sidebar-left a, .dropdown-btn {
 	padding: 6px 8px 6px 16px;
@@ -747,7 +760,7 @@ section#delivery-form .quote input{
 /*main admin*/
 #main{
 	float:left;
-	width:75%;
+	width:80%;
 
 } 
 #main h2, .menu-category{
@@ -821,7 +834,7 @@ section#menulist .container2{
 
 /*footer*/
 footer{
-	padding: 20px;
+	padding: 1px;
 	margin-top: 20px;
 	color: #ffffff;
 	/*background-color: #e8491d;*/
@@ -837,11 +850,6 @@ footer{
 
 #footer{
 	clear:both;
-	/*position: fixed;
-	width: 100%;
-	text-align: center;*/
-
-
 }
 
 
