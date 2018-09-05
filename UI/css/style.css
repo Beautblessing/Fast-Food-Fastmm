@@ -846,7 +846,11 @@ section#menulist .container2{
 
 /*footer*/
 footer{
+<<<<<<< HEAD
 	padding: 1px;
+=======
+	padding: 15px;
+>>>>>>> f790ecc3f856adf9dbb028a32808de488a005252
 	margin-top: 20px;
 	color: #ffffff;
 	/*background-color: #e8491d;*/
