@@ -42,7 +42,10 @@
       </div>
     </div>
     <div id="main" class="main-bg">
-      <h2>Food Menu</h2>
+      <!-- Box Head -->
+          <div class="box-head">
+      <h2>See Full Menu Category and List of Food items</h2>
+    </div>
       <div class="menu-category">
         <form method="post" action="menu_category.html">
         <span><label>Select Category</label>
@@ -1140,10 +1143,7 @@
                         </div>
                       </section>
                     </div>
-          <!-- <h2>Sidebar Dropdown</h2>
-          <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
-          <p>This sidebar is of full height (100%) and always shown.</p>
-          <p>Some random text..</p> -->
+         
         </div>
 
         </div>
@@ -1154,23 +1154,9 @@
             <p>Fast-Food-Fast, Copyright &copy; 2018</p>
           </footer>
         </div>
-        <script>
-          /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-          var dropdown = document.getElementsByClassName("dropdown-btn");
-          var i;
-
-          for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var dropdownContent = this.nextElementSibling;
-              if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-              } else {
-                dropdownContent.style.display = "block";
-              }
-            });
-          }
-        </script>
+       
+<!--Javascripts-->
+<script src="js/main.js"></script>
         
       </body>
       </html>

@@ -76,6 +76,7 @@ th{
 	border-bottom: 1px solid #ddd;
 	background-color: #35424a;
 	color: white;
+
 }
 td{
 	height: 20px;
@@ -95,6 +96,11 @@ tr:nth-child(even){
 th#itemname, th#customer{
 	width: 200px;
 }
+/*.table {}
+.table th{ background:#fffdfa url(images/th.gif) repeat-x 0 0; color:#818181; text-align: left; padding:7px 10px; border-bottom:solid 1px #d2d1cb;}
+.table td{ background:#fbfcfc;  border-bottom:solid 1px #e0e0e0; padding:8px 10px; }
+.table tr.odd td{ background:#f8f8f8; }
+.table tr:hover td{ background:#fff9e1; }*/
 
 	.row {
 
@@ -373,6 +379,8 @@ header #navprofile li#ordernav{
 
 
 /*boxes*/
+.box-head { background:#35424a; height:80px; color:#fff; padding: 0 10px; line-height:80px; white-space:nowrap; border-bottom:solid 1px #fff; }
+
 
 #boxes{
 	margin-top: 20px;
@@ -764,7 +772,11 @@ background-color: white;
 
 } 
 #main h2, .menu-category{
-padding-left: 30px;
+padding: 0;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
 }
 
 #main .menu-category{
