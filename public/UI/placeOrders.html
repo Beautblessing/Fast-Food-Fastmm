@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Excellent Food Delivery Services">
+	<meta name="keywords" content="fast food, tasty food, excellent fast food delivery services">
+	<meta name="author" content="Jerry Blessing">
+	<title>Fast Food Fast | Orders</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div id="logo">
+				<img src="img/logo_fff.png">
+			</div>
+
+			<nav>
+				<ul>
+					<li class="current"><a href="placeOrders.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="../index.html">Log out</a></li>
+				</ul>
+			</nav>
+
+
+		</div>
+	</header>
+
+	<section id="showcase-menu">
+		<div class="container">
+
+			<div id="top">
+				<h1>Excellent Fast Food Delivery Service</h1>
+				<p>Place your orders and have it delivered to you in no time</p>
+
+				<div class="menu-category">
+					<span><label>Select Category</label>
+						<select>
+							<option value="burgersandwichsharwama">Burgers, Sandwiches and Sharwama</option>
+							<option value="cakes">Cakes</option>
+							<option value="drinks">Drinks</option>
+							<option value="grills">Grills</option>
+							<option value="salad">Salad</option>
+							<option value="side">Side Orders</option>
+							<option value="starter">Starter</option>
+						</select></span>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="menulist">
+			<div class="container">
+				<article id="main-list">
+					<h1 class="menu-lists">Place Your Order</h1>
+
+				</article>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box" >
+			<img  class="itemImg" src="./img/chicken_pizza.jpg" >
+			<h3 class="itemName">Chicken Pizza</h3>
+			<div class="grid">
+				<div class="row">
+				<div class="col-2">
+					<p class="itemAmount">2000</p>
+					</div>
+					<div class="col-5">
+						<span><label>Quantity</label>
+							<select class="itemQuantity" onchange="selectQty(this.value)">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></span>
+					</div>
+					<div class="col-5">
+						<button class="send-order" data-price="2000" data-item="Chicken Pizza" data-qty="1" onclick="sendItem(this.dataset.item, this.dataset.price, this.dataset.qty)">order now</button>
+					</div>
+</div>
+</div>
+
+</div>
+			<div class="box" >
+				<img class="itemImg" src="./img/beef_burger.jpg">
+				<h3 class="itemName">Beef Burger </h3>
+				<div class="grid">
+
+					<div class="row">
+
+						<div class="col-2">
+						<p class="itemAmount">1500</p>
+						</div>
+						<div class="col-5">
+							<span><label>Quantity</label>
+								<select class="itemQuantity" onchange="selectQty(this.value)">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select></span>
+						</div>
+
+						<div class="col-5">
+							<button class="send-order" data-price="1500" data-item="Beef Burger" data-qty="1"  onclick="sendItem(this.dataset.item, this.dataset.price, this.dataset.qty)">order now</button>
+						</div>
+	</div>
+	</div>
+
+	</div>
+
+			<div class="box" >
+			<img  class="itemImg" src="./img/chicken_pizza.jpg" >
+			<h3 class="itemName">Chicken Pizza</h3>
+			<div class="grid">
+
+				<div class="row">
+
+					<div class="col-2">
+					<p class="itemAmount">2000</p>
+					</div>
+					<div class="col-5">
+						<span><label>Quantity</label>
+							<select class="itemQuantity" onchange="selectQty(this.value)">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></span>
+					</div>
+
+					<div class="col-5">
+						<button class="send-order" data-price="2000" data-item="Chicken Pizza" data-qty="1"  onclick="sendItem(this.dataset.item, this.dataset.price, this.dataset.qty)">order now</button>
+					</div>
+</div>
+</div>
+
+</div>
+
+		</div>
+	</section>
+	<section id="boxes">
+		<div class="container">
+			<div class="box" >
+			<img  class="itemImg" src="./img/chicken_pizza.jpg" >
+
+			<h3 class="itemName">Chicken Pizza</h3>
+			<div class="grid">
+
+				<div class="row">
+
+					<div class="col-2">
+					<p class="itemAmount">2000</p>
+					</div>
+					<div class="col-5">
+						<span><label>Quantity</label>
+							<select class="itemQuantity" onchange=selectQty(this)>
+								<option my-value="1">1</option>
+								<option my-value="2">2</option>
+								<option my-value="3">3</option>
+								<option my-value="4">4</option>
+								<option my-value="5">5</option>
+								<option my-value="6">6</option>
+								<option my-value="7">7</option>
+								<option my-value="8">8</option>
+								<option my-value="9">9</option>
+								<option my-value="10">10</option>
+							</select></span>
+					</div>
+
+					<div class="col-5">
+						<button class="send-order" data-price="2000" data-item="Chicken Pizza" data-qty="1"  onclick="sendItem(this.dataset.item, this.dataset.price, this.dataset.qty)">order now</button>
+					</div>
+</div>
+</div>
+
+</div>
+			<div class="box" >
+				<img class="itemImg" src="./img/beef_burger.jpg">
+				<h3 class="itemName">Beef Burger </h3>
+				<div class="grid">
+
+					<div class="row">
+
+						<div class="col-2">
+						<p class="itemAmount">2000</p>
+						</div>
+						<div class="col-5">
+							<span><label>Quantity</label>
+								<select class="itemQuantity" onchange="selectQty(this.value)">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select></span>
+						</div>
+
+						<div class="col-5">
+							<button class="send-order" data-price="1500" data-item="Beef Burger" data-qty=""  onclick="sendItem(this.dataset.item, this.dataset.price, this.dataset.qty)">order now</button>
+						</div>
+	</div>
+	</div>
+
+	</div>
+
+			<div class="box" >
+			<img  class="itemImg" src="./img/chicken_pizza.jpg" >
+			<h3 class="itemName">Chicken Pizza</h3>
+			<div class="grid">
+
+				<div class="row">
+
+					<div class="col-2">
+					<p class="itemAmount">2000</p>
+					</div>
+					<div class="col-5">
+						<span><label>Quantity</label>
+							<select class="itemQuantity" onchange="selectQty(this.value)">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select></span>
+					</div>
+
+					<div class="col-5">
+						<button class="send-order" data-price="2000" data-item="Chicken Pizza" data-qty="6"  onclick="sendItem(this.dataset.item, this.dataset.price, this.dataset.qty)">order now</button>
+					</div>
+</div>
+</div>
+
+</div>
+
+		</div>
+	</section>
+
+
+	<footer>
+		<p>Fast-Food-Fast, Copyright &copy; 2018</p>
+	</footer>
+<script>
+	// function selectQty(qty) {
+	//    alert(qty.options[qty.selectedIndex].getAttribute("my-value"));
+	// }
+
+	function selectQty(qty){
+	    let quantity = document.querySelector(".send-order");
+			quantity.dataset.qty = qty;
+	// 		alert(quantity.dataset.qty);
+
+	}
+	</script>
+	<!--Javascripts-->
+<script src="js/main.js"></script>
+</body>
+</html>
