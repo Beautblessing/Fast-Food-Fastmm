@@ -18,7 +18,6 @@ let order = [
         paymentType: "Cash/POS"
     }
 ];
-
 //get all orders
 router.get("/", (req, res) => {
 
@@ -48,7 +47,6 @@ router.get("/:id", (req, res) => {
         message: "such order does not exist",
     });
 });
-
 //post a new order
 
 router.post("/", (req, res) => {
