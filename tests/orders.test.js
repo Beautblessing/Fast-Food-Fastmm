@@ -53,6 +53,7 @@ describe('POST /orders', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 
@@ -64,6 +65,7 @@ describe('POST /orders', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });
@@ -90,6 +92,7 @@ describe('GET /order/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });
@@ -129,6 +132,7 @@ describe('PUT /orders/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 
@@ -140,6 +144,7 @@ describe('PUT /orders/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });

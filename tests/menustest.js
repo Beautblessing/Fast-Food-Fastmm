@@ -34,6 +34,7 @@ describe('POST /menus', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 
@@ -45,6 +46,7 @@ describe('POST /menus', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });
@@ -71,6 +73,7 @@ describe('GET /menu/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });
@@ -92,6 +95,7 @@ describe('PUT /menus/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });
@@ -99,12 +103,6 @@ describe('PUT /menus/:id', () => {
 
 describe('DELETE /menus/:id', () => {
     const menuToDelete = {
-        foodItemName: 'Chicken pizza',
-        description: 'served with a bottle of yoghout',
-        itemAmount: 2000,
-    };
-
-    const menuToDeleteNotpassed = {
         foodItemName: 'Chicken pizza',
         description: 'served with a bottle of yoghout',
         itemAmount: 2000,
@@ -118,6 +116,7 @@ describe('DELETE /menus/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 
@@ -128,6 +127,7 @@ describe('DELETE /menus/:id', () => {
             .end((err) => {
                 if (err) return done(err);
                 done();
+                return true;
             });
     });
 });
