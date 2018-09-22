@@ -7,7 +7,4 @@ const server = http.createServer(app);
 
 server.listen(port);
 
-//listen for request
-// app.listen(process.env.port || 5000, function(){
-//     console.log("now listening for requests");
-// });
+console.log(`Now listening on: http://localhost:${port}`);

@@ -1,9 +1,10 @@
+// import express from "express";
 const express = require("express");
 
 const router = express.Router();
 
 
-let order = [
+const order = [
     {
         id: 1,
         foodItemName: "Chicken pizza",
@@ -15,23 +16,22 @@ let order = [
         address: "ushafa",
         orderStatus: "completed",
         date: "2018-09-15",
-        paymentType: "Cash/POS"
-    }
+        paymentType: "Cash/POS",
+    },
 ];
-//get all orders
+// get all orders
 router.get("/", (req, res) => {
-
     res.status(200).send({
         success: "true",
         message: "order retrieved successfully",
-        order: order
+        order,
     });
 });
 
 
-//get a specific order from orders
+// get a specific order from orders
 router.get("/:id", (req, res) => {
-    const id = parseInt(req.params.id);
+    const id = parseInt(req.params.id, 10);
     order.map((itemToFind) => {
         if (itemToFind.id === id) {
             return res.status(200).send({
@@ -47,57 +47,56 @@ router.get("/:id", (req, res) => {
         message: "such order does not exist",
     });
 });
-//post a new order
+// post a new order
 
 router.post("/", (req, res) => {
-    if(!req.body.foodItemName) {
+    if (!req.body.foodItemName) {
         return res.status(400).send({
             success: "false",
-            message: "food item name is required"
+            message: "food item name is required",
         });
-
-    } else if(!req.body.itemAmount) {
+    } if (!req.body.itemAmount) {
         return res.status(400).send({
             success: "false",
-            message: "price of item is required"
+            message: "price of item is required",
         });
-    } else if(!req.body.itemQuantity) {
+    } if (!req.body.itemQuantity) {
         return res.status(400).send({
             success: "false",
-            message: "quantity of item is required"
+            message: "quantity of item is required",
         });
-    } else if(!req.body.nameOfCustomer) {
+    } if (!req.body.nameOfCustomer) {
         return res.status(400).send({
             success: "false",
-            message: "name of customer is required"
+            message: "name of customer is required",
         });
-    // } else if(!req.body.email) {
+    // } if (!req.body.email) {
     //     return res.status(400).send({
     //         success: "false",
-    //         message: "price of item is required"
+    //         message: "price of item is required",
     //     });
-    } else if(!req.body.phone) {
+    } if (!req.body.phone) {
         return res.status(400).send({
             success: "false",
-            message: "phone number is required"
+            message: "phone number is required",
         });
-    } else if(!req.body.address) {
+    } if (!req.body.address) {
         return res.status(400).send({
             success: "false",
-            message: "delivery address is required"
+            message: "delivery address is required",
         });
-    } else if(!req.body.date) {
+    } if (!req.body.date) {
         return res.status(400).send({
             success: "false",
-            message: "delivery date is required"
+            message: "delivery date is required",
         });
-    } else if(!req.body.paymentType) {
+    } if (!req.body.paymentType) {
         return res.status(400).send({
             success: "false",
-            message: "mode of payment is required"
+            message: "mode of payment is required",
         });
     }
-    const  orders = {
+    const orders = {
         id: order.length + 1,
         foodItemName: req.body.foodItemName,
         itemAmount: req.body.itemAmount,
@@ -108,16 +107,16 @@ router.post("/", (req, res) => {
         address: req.body.address,
         orderStatus: "Processing",
         date: req.body.date,
-        paymentType:req.body.paymentType
+        paymentType: req.body.paymentType,
 
     };
 
     order.push(orders);
-    //console.log(req.body);
-    return  res.status(201).send({
+    //  console.log(req.body);
+    return res.status(201).send({
         success: "true",
         message: "order added successfully",
-        order: order
+        order,
     });
     // .catch(err => {
     //     console.log(err);
@@ -127,8 +126,8 @@ router.post("/", (req, res) => {
     // });
 });
 
-//update an order status
-router.put("/:id",(req, res) => {
+// update an order status
+router.put("/:id", (req, res) => {
     const id = parseInt(req.params.id, 10);
     let idFound;
     let orderIndex;
@@ -151,7 +150,6 @@ router.put("/:id",(req, res) => {
             success: "false",
             message: "Order Status is required",
         });
-
     }
 
     const updatedOrder = {
@@ -165,7 +163,7 @@ router.put("/:id",(req, res) => {
         address: idFound.address,
         paymentType: idFound.paymentType,
         orderStatus: req.body.orderStatus || idFound.orderStatus,
-        date: idFound.date
+        date: idFound.date,
 
     };
 
@@ -179,6 +177,4 @@ router.put("/:id",(req, res) => {
 });
 
 
-
-
-module.exports=router;
+module.exports = router;
