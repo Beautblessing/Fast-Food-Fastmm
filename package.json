@@ -36,6 +36,8 @@
     "express": "^4.16.3",
     "express-api-versioning": "^2.0.0",
     "flowtype": "^2.0.0",
+    "install": "^0.12.1",
+    "istanbul": "^0.4.5",
     "morgan": "^1.9.1",
     "standard": "^12.0.1"
   },
