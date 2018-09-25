@@ -1,10 +1,9 @@
 body{
-	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	font: 15px/1.5 "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;;
 	padding: 0;
 	margin: 0;
 	background-color: #f4f4f4;
 }
-
 
 /*Global*/
 .container{
@@ -47,7 +46,9 @@ ul, li, h3{
 
 .dark{
 	padding: 15px;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
+	width: 50%;
+	margin: auto;
 	/*background: #35424a;*/
 	background: rgba(53,66,74,0.5);
 	color: #ffffff;
@@ -187,14 +188,13 @@ header a{
 }
 
 header li{
-	
 	display: inline;
 	padding: 0 20px 0 20px;
 	float: left;
-	
+
 }
 
-header #branding{
+header #logo{
 	float: left;
 }
 
@@ -203,14 +203,14 @@ header #logo img{
 	width: 180px;
 	height: 120px;
 }
-header #branding h1{
+header #logo h1{
 	margin: 0;
 }
 
 header nav{
 	float: right;
 	padding-top: 70px;
-	margin-top: 10px; 
+	margin-top: 10px;
 
 
 }
@@ -235,16 +235,11 @@ header #profile img{
 }
 
 header #navprofile li#ordernav{
-	
 	padding-top: 70px;
-	margin-top: 10px; 
-
-
+	margin-top: 10px;
 }
-
 #header{
 	width:100%;
-
 }
 
 .men-cat h2{ background:#35424a; height:32px; color:#fff; padding: 0 10px; line-height:32px; white-space:nowrap; border-bottom:solid 1px #fff; }
@@ -253,9 +248,11 @@ header #navprofile li#ordernav{
 
 #showcase{
 	min-height: 400px;
-	background:url('../img/land.jpg') no-repeat 0 -400px; 
-	text-align: center;
-	color: #ffffff; 
+	background:url('../img/land.jpg') no-repeat 0 -400px;
+	background-size: 100%;
+    background-position: 50% 50%;
+  	text-align: center;
+	color: #ffffff;
 }
 
 #showcase h1{
@@ -276,86 +273,96 @@ header #navprofile li#ordernav{
 	margin-top: 10px;
 	text-align: left;
 	margin-bottom: 20px;
-	
-	
 }
 
-#showcase aside.sidebar h3, h5{
-	
+
+/*#showcase aside.sidebar h3, h5{
+	text-align: center;
+	color: #ffffff;
+	border-bottom: none;
+}*/
+
+#showcase h3, h5{
 	text-align: center;
 	color: #ffffff;
 	border-bottom: none;
 
 }
-
-#showcase aside.sidebar a{
-	
+#showcase a{
 	color: #e8491d;
 	font-weight: bold;
-	
-
 }
 
-#showcase aside.sidebar .quote input{
-	width: 90%;
+/*#showcase aside.sidebar a{
+	color: #e8491d;
+	font-weight: bold;
+}*/
+
+#showcase .quote input{
 	padding: 5px;
+	margin: auto;
+	margin-bottom: 5px;
+	width: 70%
+}
+#showcase .quote input .button_1{
+	margin: 0;
+	padding: 0;
+}
+#showcase .quote label{
+text-align: left;
+}
+#showcase .quote h5{
+font-weight: normal;
+}
+
+/*#showcase aside.sidebar .quote input{
+	width: 50%;
+	padding: 5px;
+	margin: auto;
 	margin-bottom: 5px;
 
+}*/
 
-
-}
-
-#showcase aside.sidebar button, .quote button{
+/*#showcase button, .quote button{
 	display: block;
 	width: 95%;
-}
+}*/
 
-#showcase aside.sidebar .highlight{
+
+/*#showcase aside.sidebar button, .quote button{
+	display: block;
+	width: 95%;
+}*/
+
+#showcase .highlight{
 	color: #e8491d;
 	font-weight: bold;
 }
+
+/*#showcase aside.sidebar .highlight{
+	color: #e8491d;
+	font-weight: bold;
+}*/
 
 
 
 #showcase-menu{
 	min-height: 180px;
-	background:url('../img/landing.jpg') no-repeat 0 -400px; 
+	background:url('../img/landing.jpg') no-repeat 0 -400px;
 	text-align: center;
-	color: #ffffff; 
+	color: #ffffff;
 	border-bottom: #e8491d 3px solid;
 }
 
 #showcase-menu #top{
-	
+
 	font-weight: bold;
 	/*margin-bottom: 100px;*/
 }
 
 #showcase-menu #top h1{
 	color: #e8491d;
-}
-
-
-/*newsletter*/
-
-#newsletter{
-	padding: 15px;
-	color: #ffffff;
-	background: #35424a
-}
-
-#newsletter h1{
-	float: left;
-}
-#newsletter form{
-	float: right;
-	margin-top: 15px;
-}
-#newsletter input[type="email"]{
-	padding: 4px;
-	height: 25px;
-	width: 240px;
-
+	padding-top: 20px;
 }
 
 
@@ -495,10 +502,10 @@ ul#menu h3{
 }*/
 .category-image{
 	min-height: 100px;
-	background:url('../img/landing.jpg') no-repeat 0 -400px; 
+	background:url('../img/landing.jpg') no-repeat 0 -400px;
 	text-align: center;
-	color: #ffffff; 
-	
+	color: #ffffff;
+
 }
 .menu-category select{
 	padding: 4px;
@@ -530,7 +537,7 @@ ul#menu h3{
 }
 
 .button_2{
-	
+
 	background: #e8491d;
 	border: 0;
 	padding: 2px 10px;
@@ -546,7 +553,7 @@ ul#menu h3{
 
 
 .button_3{
-	
+
 	background: #e8491d;
 	border: 0;
 	padding: 4px 5px;
@@ -567,7 +574,7 @@ ul#menu h3{
 	margin: auto;
 	border-radius: 6px;
 	/*	border: #cccccc solid 1px;*/
-	
+
 }
 
 .checkout_order h3#title-order{
@@ -645,7 +652,7 @@ section#delivery-form .quote input{
 	position: relative;
 	font-weight: bold;
 	font-size: 1.35em;
-	/*padding: 25px 25px 25px 80px;*/	
+	/*padding: 25px 25px 25px 80px;*/
 	padding: 25px 25px 0px 80px;
 	margin: 10px auto;
 	height: 10px;
@@ -659,7 +666,7 @@ section#delivery-form .quote input{
 	position: relative;
 	font-weight: bold;
 	font-size: 1.00em;
-	/*padding: 25px 25px 25px 80px;*/	
+	/*padding: 25px 25px 25px 80px;*/
 	padding: 0px 25px 0px 0px;
 	margin: 0;
 	z-index: 9;
@@ -745,9 +752,9 @@ section#delivery-form .quote input{
 
    }
 
-   
+
 #sidebar-left, #main, #sidebar-right{
-	min-height: 600px	
+	min-height: 600px
 
 }
 
@@ -757,7 +764,7 @@ section#delivery-form .quote input{
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	color:#f1f1f1; 
+	color:#f1f1f1;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-weight: bold;
@@ -797,7 +804,7 @@ background-color: white;
 	float:left;
 	width:80%;
 
-} 
+}
 
 #main h2, .menu-category{
 padding: 0;
@@ -854,16 +861,14 @@ section#menulist .container2{
 }
 
 
-
-
 /*All orders Admin*/
 
 #order-detail{
-	
+
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	
+
 
 }
 #confirm_ord{
@@ -876,7 +881,7 @@ section#menulist .container2{
 
 .confirm{
 	float: right;
-	
+
 }
 
 /*footer*/
@@ -904,46 +909,59 @@ footer{
 /*media Queries*/
 
 @media(max-width: 768px){
-	header #branding, 
-	header nav,
-	header nav li,
-	#newsletter h1,
-	#newsletter form,
+	header #logo, header nav, header nav li,
 	#boxes .box,
 	article#main-col,
 	aside#sidebar{
 		float: none;
 		text-align: center;
 		width: 100%;
-
 	}
-
 	header{
 		padding-bottom: 20px;
 	}
-
+header #logo{
+	width: 20%;
+}
+	header h1{
+		font-size: 16px;
+	}
+	header nav{
+		padding: 0;
+	}
+	header nav li{
+			font-size: 12px;
+	}
+	#showcase{
+	background-repeat:no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	}
 	#showcase h1{
 		margin-top: 40px;
-		font-size: 30px;
-	}
-	#newsletter button, .quote button{
-		display: block;
-		width: 100%;
-	}
-
-	#newsletter form input[type='email'], .quote input, .quote textarea{
-		width: 100%;
-		margin-bottom: 5px;
+		font-size: 15px;
 	}
 	table{
 overflow-x:auto;
 display: block
 }
-	
+
+#showcase-menu #top h1{
+font-size: 16px;
 }
-/* Some media queries for responsiveness */
+#showcase-menu #top p{
+font-size: 12px;
+font-weight: normal;
+}
+#showcase h5{
+font-size: 8px;
+}
+
+}
+/* media queries */
 @media screen and (max-height: 450px) {
 	#sidebar-left{padding-top: 15px;}
 	#sidebar-left a {font-size: 18px;}
 }
-
